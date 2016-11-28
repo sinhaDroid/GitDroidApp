@@ -2,6 +2,8 @@
 
 The sample app displays a list of GitHub public repositories for a given username. Tapping on one of them will open a repository details screen, where more information about the repo can be found. This screen also shows information about the owner of the repository.
 
+![Screenshot](https://github.com/sinhaDroid/GithubRepo-Android-MVP/Screenshot_1480329510.png?raw=true "MAIN SCREEN")
+
 # Libraries used
 *AppCompat, CardView and RecyclerView
 *RxJava & RxAndroid
