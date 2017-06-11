@@ -68,16 +68,16 @@ public class RepositoryAdapter extends RecyclerView.Adapter<RepositoryAdapter.Re
         return repositories.size();
     }
 
-    public static class RepositoryViewHolder extends RecyclerView.ViewHolder {
-        public View contentLayout;
-        public TextView titleTextView;
-        public TextView descriptionTextView;
-        public TextView watchersTextView;
-        public TextView starsTextView;
-        public TextView forksTextView;
+    static class RepositoryViewHolder extends RecyclerView.ViewHolder {
+        View contentLayout;
+        TextView titleTextView;
+        TextView descriptionTextView;
+        TextView watchersTextView;
+        TextView starsTextView;
+        TextView forksTextView;
         public Repository repository;
 
-        public RepositoryViewHolder(View itemView) {
+        RepositoryViewHolder(View itemView) {
             super(itemView);
             contentLayout = itemView.findViewById(R.id.layout_content);
             titleTextView = (TextView) itemView.findViewById(R.id.text_repo_title);

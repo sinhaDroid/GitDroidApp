@@ -13,7 +13,7 @@ public class User implements Parcelable {
     public String name;
     public String url;
     public String email;
-    public String login;
+    private String login;
     public String location;
     @SerializedName("avatar_url")
     public String avatarUrl;
@@ -45,7 +45,7 @@ public class User implements Parcelable {
         dest.writeString(this.avatarUrl);
     }
 
-    protected User(Parcel in) {
+    private User(Parcel in) {
         this.id = in.readLong();
         this.name = in.readString();
         this.url = in.readString();

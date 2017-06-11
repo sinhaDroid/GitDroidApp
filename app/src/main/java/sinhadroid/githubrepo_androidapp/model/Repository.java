@@ -19,10 +19,7 @@ public class Repository implements Parcelable {
     public String language;
     public String homepage;
     public User owner;
-    public boolean fork;
-
-    public Repository() {
-    }
+    private boolean fork;
 
     public boolean hasHomepage() {
         return homepage != null && !homepage.isEmpty();
@@ -55,7 +52,7 @@ public class Repository implements Parcelable {
         dest.writeByte(fork ? (byte) 1 : (byte) 0);
     }
 
-    protected Repository(Parcel in) {
+    private Repository(Parcel in) {
         this.id = in.readLong();
         this.name = in.readString();
         this.description = in.readString();
